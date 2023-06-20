@@ -59,17 +59,17 @@ def match_text(data, puuid):
             queueId = data["info"]["queueId"]
             text += "Type de partie : "
             if queueId == 420:
-                text += "Ranked\n"
+                text += "a Ranked\n"
             elif queueId == 430:
-                text += "Normal Blind\n"
+                text += "a Normal Blind\n"
             elif queueId == 400:
-                text += "Normal Draft\n"
+                text += "a Normal Draft\n"
             elif queueId == 450:
-                text += "ARAM\n"
+                text += "an ARAM\n"
             elif queueId == 440:
-                text += "Flex\n"
+                text += "a Flex\n"
             elif queueId == 31 or queueId == 32 or queueId == 33:
-                text += "Coop vs IA\n"
+                text += "a Coop vs IA\n"
             else:
                 text += queueId+" inconnue\n"
             text += "Champion : " + i["championName"] + "\n"
